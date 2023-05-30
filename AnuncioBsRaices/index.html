@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/scripts.js" type="module" defer></script>
+    <title>Bienes raíces</title>
+</head>
+<body>
+    <header>
+        <h1>Crud superheroes</h1>
+    </header>
+    <main>
+        <section class="seccion-formulario">
+        <h2>Información del superheroe</h2>
+        <h3>Llena el formulario </h3>
+        <form>
+        <p>
+            <fieldset>
+                <legend>Información del superheroe</legend>
+                <label for="nombre">Nombre:</label></br>
+                <input type="text" name="txtNombre" placeholder="nombre" required>
+                <br>
+                <label for="descripcion">ALIAS:</label></br>
+                <input type="text" name="txtAlias" placeholder="alias" required>
+                <br><br>
+                <label for="editorial">EDITORIAL:</label></br>
+                
+                 <input type="radio" name="rdoEditorial" value="Marvel" checked>Marvel
+                 <br>
+                 <input type="radio" name="rdoEditorial" value="DC">DC
+                 <br> <br>
+                 <label for="precio">FUERZA:</label></br>
+                 <input type="number" name="txtFuerza" placeholder="Fuerza">    
+                 <br><br>
+                 <label for="cantBanios">ARMA:</label></br>
+                 <select name="txtArma">
+                    <option value="Espada">Espada</option>
+                    <option value="Arco">Arco</option>
+                    <option value="Martillo">Martillo</option>
+                    <option value="Varita">Varita</option>
+                  </select>
+                 <br><br>
+               
+                 <div id="gif"class="escondido">
+                    <img src="./Imagenes/superCargando2.gif" alt="gifCarga">
+                  </div>
+            </fieldset>
+        </p>
+        <p>
+            <input type="submit" value="Agregar Anuncio" id="btnAlta">
+            <input type="button" value="Eliminar" id="btnEliminar" disabled>
+            <input type="button" value="Cancelar" id="btnCancelar">
+            <input type="hidden" name="txtId" value="">
+        </p>
+    </form>
+</section>
+        
+<h2>Anuncios publicados</h2>
+        <section id="tabla" class="seccion-tabla">
+        </section>
+    </section>
+    </main>
+
+
+    
+</body>
+</html>
+

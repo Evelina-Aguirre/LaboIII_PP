@@ -1,0 +1,53 @@
+.seccion-formulario{
+    justify-content: center;
+    padding:0 20px;
+    border-radius: 5px;
+   
+}
+fieldset{
+    background-color:white;
+    align-self:baseline;
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+input[type="text"],textarea {
+    background-color: #f1f1f1;
+    width: 100%;
+    resize: none;
+}
+
+table{
+    align-self: auto;
+    width: 30%;
+    border-collapse: collapse;
+    margin: 0;
+    margin: auto; 
+}
+
+th,td{
+    border:1px solid;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+th{
+    text-transform: capitalize;
+    background-color:aqua;
+}
+
+.rowPar{
+    background-color:#ddd;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.escondido{
+    display: none;
+}
