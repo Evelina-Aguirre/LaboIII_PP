@@ -1,14 +1,3 @@
-/*export const crearTabla = (data) =>{
-    if (!Array.isArray(data)) return null;
-    const tabla = document.getElementById("tabla");
-    console.log("a ver que hay en la tabla ",tabla);
-    console.log(data[0]);
-    console.log("estoy en crear tabla ");
-    tabla.appendChild(crearCabecera(data[0]));
-    tabla.appendChild(crearCuerpo(data));
-    
-    return tabla;
-}*/
 export const crearTabla = (data) => {
     if (!Array.isArray(data)) return null;
     const tablaElement = document.createElement("table");
@@ -22,7 +11,6 @@ const crearCabecera=(elemento) =>{
 
     const tHead = document.createElement("thead");
     const headRow = document.createElement("tr");
-    //cargo los th con los nombres de la keys
     for (const key in elemento) {
         if (key === "id") continue;
         const th = document.createElement("th");
@@ -48,7 +36,7 @@ const crearCuerpo=(data) =>{
 
         for (const key in element) {
             if (key === "id") {
-                tr.setAttribute("data-id", element[key]);//o así
+                tr.setAttribute("data-id", element[key]);
             } else {
                 const td = document.createElement("td");
                 td.textContent = element[key];
@@ -64,12 +52,5 @@ const crearCuerpo=(data) =>{
 
 export  const actualizarTabla=(contenedor, data)=>{
     contenedor.innerHTML = '';
-//while(contenedor.hasChildNodes()){
-    //console.log("Contenedor: ",contenedor);
-    //console.log("data",data);
-   //   while(contenedor.firstChild){
-    //contenedor.removeChild(contenedor.firstChild);
-    //}
-    
     contenedor.appendChild(crearTabla(data));
 };

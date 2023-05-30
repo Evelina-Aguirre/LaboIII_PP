@@ -20,11 +20,9 @@ input[type="text"],textarea {
 }
 
 table{
-    align-self: auto;
-    width: 30%;
+    width: 100%;
     border-collapse: collapse;
-    margin: 0;
-    margin: auto; 
+   
 }
 
 th,td{
@@ -51,3 +49,9 @@ header{
 .escondido{
     display: none;
 }
+
+header img {
+    width: 100%;
+    height: auto;
+  }
+
